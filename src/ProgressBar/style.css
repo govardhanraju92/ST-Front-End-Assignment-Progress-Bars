@@ -1,0 +1,41 @@
+.title{
+   color: #000000;
+}
+.buttons{
+flex-direction: row;
+    display: flex;
+}
+.dropDown {
+//background-color: #fc2d2d;
+    color: #ffffff;
+    margin-right: 60px !important;
+    border: none;
+    font-size:  15px;
+}
+.myProgress {
+    width: 100%;
+    background-color: #ddd;
+}
+.myBar {
+    width: 0%;
+    height: 30px;
+    background-color:#ff0000;
+}
+.progress {
+    position: relative;
+}
+
+.progress-bar-title {
+    position: absolute;
+    text-align: center;
+    color: black;
+    line-height: 20px; /* line-height should be equal to bar height */
+    overflow: hidden;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.progress-bar-color{
+    background-color: #ff0000;
+}
+
