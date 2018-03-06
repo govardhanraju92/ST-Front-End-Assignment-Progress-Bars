@@ -3,16 +3,16 @@ var percent = 0;
 window.onload = function () {
 
     var http = new XMLHttpRequest();
-        http.onload = function () {
-            var ourData = JSON.parse(http.response);
-            console.log(ourData);
-            renderHtml(ourData)
-        }
-    http.open("GET","http://pb-api.herokuapp.com/bars",true);
+    http.onload = function () {
+        var ourData = JSON.parse(http.response);
+        console.log(ourData);
+        renderHtml(ourData)
+    }
+    http.open("GET", "http://pb-api.herokuapp.com/bars", true);
     http.send();
 }
 
-    function renderHtml(data) {
+function renderHtml(data) {
     console.log(data.limit);
     document.getElementById("progress1").style.width = data.bars[0] + "%";
     document.getElementById("percentage1").innerHTML = data.bars[0] + "%";
@@ -40,12 +40,10 @@ window.onload = function () {
 function increase(value) {
     var x = document.getElementById("Progress").value;
     var button = document.getElementById(value);
-    console.log(button);
-    document.getElementById("demo").innerHTML = x;
-            percent = parseInt(document.getElementById("percentage"+x).innerHTML) + parseInt(button.innerHTML);
-            document.getElementById("progress"+x).style.width = percent <=0 ?  (0 + "%") : (percent + "%");
-            document.getElementById("progress"+x).style.backgroundColor = parseInt (document.getElementById("progress"+x).style.width) > parseInt (document.getElementById("progress"+x).value) ? "#FF0000" :"#008000"
-            document.getElementById("percentage"+x).innerHTML = percent <=0 ?  0  : percent;
+    percent = parseInt(document.getElementById("percentage" + x).innerHTML) + parseInt(button.innerHTML);
+    document.getElementById("progress" + x).style.width = percent <= 0 ? (0 + "%") : (percent + "%");
+    document.getElementById("progress" + x).style.backgroundColor = parseInt(document.getElementById("progress" + x).style.width) > parseInt(document.getElementById("progress" + x).value) ? "#FF0000" : "#008000"
+    document.getElementById("percentage" + x).innerHTML = percent <= 0 ? 0 : percent;
 }
 
 
