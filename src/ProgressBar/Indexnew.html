@@ -6,11 +6,11 @@
     <title>Title</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
 
     <script>
-
     </script>
 
 </head>
@@ -21,45 +21,40 @@
     </div>
 <div>
 
-    <!--<div  class="myProgress">-->
-        <!--<div id ="progress1" class="myBar"></div>-->
-        <!--<span class="progress-bar-title" id="percentage1"></span>-->
-    <!--</div>-->
-
     <div class="progress">
-            <div id ="progress1" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            <div id ="progress1" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="background-color: #008000">
             <span class="progress-bar-title" id="percentage1"></span>
         </div>
     </div>
     <div class="progress">
-        <div id ="progress2"class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style=" width:0% ">
+        <div id ="progress2" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="background-color: #008000" >
             <span class="progress-bar-title" id="percentage2"></span>
         </div>
     </div>
     <div class="progress">
-        <div id ="progress3" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+        <div id ="progress3" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="background-color: #008000">
             <span class="progress-bar-title" id="percentage3"></span>
         </div>
     </div>
     <div class="progress">
-        <div id ="progress4" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+        <div id ="progress4" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="background-color: #008000">
             <span class="progress-bar-title" id="percentage4"></span>
         </div>
     </div>
 </div>
     <div class="buttons">
         <div>
-            <select name="navyOp" id="Progress" >
+            <select style="margin-left: 10px;margin-right: 10px; height: 30px"name="navyOp" id="Progress" >
                 <option value=1 selected="selected">#Progress1</option>
                 <option value=2  >#Progress2</option>
                 <option value=3 >#Progress3</option>
                 <option value=4 >#Progress4</option>
             </select>
         </div>
-        <button type="button" id="but1" value=0 onclick="increase(this.id)" class="btn btn-info"></button>
-        <button type="button" id="but2"  value=1 onclick="increase(this.id)"class="btn btn-info"></button>
-        <button type="button" id="but3"  value=2 onclick="increase(this.id)" class="btn btn-info"></button>
-        <button type="button" id="but4"  value=3 onclick="increase(this.id)" class="btn btn-info"></button>
+        <button type="button"   id="but1" value=0 onclick="increase(this.id)" class="btn btn-info" style="margin-left: 10px;margin-right: 10px"></button>
+        <button type="button" id="but2"  value=1 onclick="increase(this.id)"class="btn btn-info" style="margin-left: 10px;margin-right: 10px"></button>
+        <button type="button" id="but3"  value=2 onclick="increase(this.id)" class="btn btn-info" style="margin-left: 10px;margin-right: 10px"></button>
+        <button type="button" id="but4"  value=3 onclick="increase(this.id)" class="btn btn-info" style="margin-left: 10px;margin-right: 10px"></button>
 
     </div>
     <div>
